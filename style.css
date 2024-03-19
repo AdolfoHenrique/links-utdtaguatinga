@@ -120,6 +120,10 @@ h3{
     box-shadow: 1px 1px 5px rgba(24, 23, 23, 0.514);
 }
 
+.links-formulario input{
+    outline: none;
+}
+
 #date{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
