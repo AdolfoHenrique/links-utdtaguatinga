@@ -29,10 +29,11 @@ h3{
 }
 
 .links-h2{
-    margin: 100px;
+    margin: 90px;
     padding: 20px;
     border-radius: 15px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
     background-color: #0B8C38;
     color: white;
 }
