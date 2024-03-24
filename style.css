@@ -38,7 +38,7 @@ h3{
     color: white;
 }
 
-.btn-outromedidor{
+.mensagemvolte{
     margin: 20px;
     padding: 15px 70px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -49,9 +49,6 @@ h3{
     background-color: white;
     border-radius: 15px;
     text-decoration: none;
-    box-shadow: inset 1px 1px 5px rgba(24, 23, 23, 0.514);
-}
-.btn-outromedidor:hover{
     box-shadow: 1px 1px 5px rgba(24, 23, 23, 0.514);
 }
 
