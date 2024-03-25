@@ -19,31 +19,3 @@ h1: #0B8C38
 Foto
 
 Logo: 100px
-
-
-function doPost(e) {
-  var sheetId = '1xUQaDMqUAbiww-5G5troytUEDFJKM8VdTsFdmERT2P8'; // Substitua pelo ID real da sua planilha
-  var sheetName = 'substituicao-ose'; // Substitua pelo nome da aba onde os dados serão inseridos
-  
-  var ss = SpreadsheetApp.openById(sheetId);
-  var sheet = ss.getSheetByName(sheetName);
-  
-  // Captura os valores dos campos do formulário
-  var numeroDaOse = e.parameter['numero-da-ose'];
-  var medidorRetirado = e.parameter['medidor-retirado'];
-  var leituraRet = e.parameter['leituraret'];
-  var medidorInstalado = e.parameter['medidor-instalado'];
-  var leituraInst = e.parameter['leiturainst'];
-  var lacreDaCaixa = e.parameter['lacre-da-caixa'];
-  var chaveDeReferencia = e.parameter['chave-de-referencia'];
-  var matriculaEletricista1 = e.parameter['matricula-eletricista-1'];
-  var matriculaEletricista2 = e.parameter['matricula-eletricista-2'];
-  var data = e.parameter['Data'];
-  
-  // Adiciona os valores na próxima linha vazia na ordem especificada
-  sheet.appendRow([numeroDaOse, medidorRetirado, leituraRet, medidorInstalado, leituraInst, lacreDaCaixa, chaveDeReferencia, matriculaEletricista1, matriculaEletricista2, data]);
-  
-  // Redireciona para a página de agradecimento após o envio dos dados
-    var nextUrl = e.parameter['_next'] || 'https://links-utdtaguatinga.vercel.app/obg.html';
-  return HtmlService.createHtmlOutput("window.location.href='" + nextUrl + "';");
-}

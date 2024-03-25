@@ -108,6 +108,7 @@ h3{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     box-shadow: inset 1px 1px 5px rgba(24, 23, 23, 0.514);
+    
 }
 
 .links-formulario input::placeholder{
@@ -116,7 +117,56 @@ h3{
     font-weight: bold;
     color: #033a16;
 }
+
 .links-formulario input:hover{
+    box-shadow: 1px 1px 5px rgba(24, 23, 23, 0.514);
+}
+
+.links-formulario button{
+    margin: 20px;
+    padding: 15px 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #033a16;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.links-formulario-avulsa{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    background-color: #03A62C;
+    border: 1px solid #03A62C;
+    border-radius: 25px;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 1px 1px 5px rgba(24, 23, 23, 0.514);
+}
+
+
+.links-formulario-avulsa input{
+    padding: 20px 40px;
+    border: none;
+    width: 200px;
+    text-align: center;
+    border-radius: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    box-shadow: inset 1px 1px 5px rgba(24, 23, 23, 0.514);
+}
+
+.links-formulario-avulsa input::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #033a16;
+}
+.links-formulario-avulsa input:hover{
     box-shadow: 1px 1px 5px rgba(24, 23, 23, 0.514);
 }
 
@@ -127,7 +177,7 @@ h3{
     color: #033a16;
 }
 
-.links-formulario button{
+.links-formulario-avulsa button{
     margin: 20px;
     padding: 15px 70px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
