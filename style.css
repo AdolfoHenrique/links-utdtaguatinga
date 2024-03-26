@@ -26,6 +26,8 @@ h1{
 h3{
     font-size: 25px;
     padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 .links-h2{
@@ -36,6 +38,7 @@ h3{
     text-align: center;
     background-color: #0B8C38;
     color: white;
+    
 }
 
 .mensagemvolte{
