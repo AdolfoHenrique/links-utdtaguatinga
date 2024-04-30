@@ -30,6 +30,16 @@ h3{
     color: white;
 }
 
+h5{
+    font-size: 15px;
+    padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    margin: 0;
+    padding: 0 100px 0 0;
+}
+
 .links-h2{
     margin: 90px;
     padding: 20px;
@@ -189,6 +199,12 @@ h3{
     color: #033a16;
     border: none;
     background-color: white;
+    border-radius: 15px;
+}
+
+.selecione{
+    border: 3px solid white;
+    padding: 10px;
     border-radius: 15px;
 }
 

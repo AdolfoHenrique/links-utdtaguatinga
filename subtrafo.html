@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Substituição de Transformador</title>
+</head>
+<body>
+    <main>
+        <section class="links">
+            <img class="links-logo" src="assets/Logo Neoenergia.png" alt="">
+            <h1>UTD - Taguatinga</h1>
+                <form class="links-formulario" action="https://script.google.com/macros/s/AKfycbxJMMbzp7_-SDeknOJ-AAZSVqfIbicP3uZ29lGOFdIK5cLiVITLbxxNx33WQHG5iyL4gg/exec" method="POST">
+                    <h3>Substituição de Trafo</h3>
+                    <input type="date" id="date" name="Data" placeholder="Data" required>
+                    <input type="text" name="nome-eletricistas" placeholder="Nome dos Eletricistas" required>
+                    <input type="text" name="numero-cdi" placeholder="Numero da CDI" required>
+                    <input type="text" name="chave" placeholder="Chave" required>
+                    <input type="text" name="utd-regiao" placeholder="UTD da Região" required>
+                    <div class="selecione">
+                        <h5>Tipo do Trafo Retirado</h5>
+                        <input list="opcoes" id="escolha" name="Trafo Retirado">
+                            <datalist id="opcoes">
+                            <option value="Monofásico">
+                            <option value="Bifásico">
+                            <option value="Trifásico">
+                            </datalist>
+                    </div>
+                    <input type="number" name="potencia" placeholder="Potência em KVA" required>
+                    <input type="name" name="tipo-do-oleo" placeholder="Tipo de Óleo" required>
+                    <div class="selecione">
+                        <h5>Tipo do Trafo Instalado</h5>
+                        <input list="opcoes" id="escolha" name="Trafo Instalado">
+                            <datalist id="opcoes">
+                            <option value="Monofásico">
+                            <option value="Bifásico">
+                            <option value="Trifásico">
+                            </datalist>
+                    </div>
+                    <input type="text" name="tipo-do-oleo-inst" placeholder="Tipo do Óleo" required>
+                    <input type="text" name="obs" placeholder="Observação">
+                    <button type="submit">Enviar</button>
+                    <input type="hidden" name="_next" value="https://links-utdtaguatinga.vercel.app/obg.html">
+                </form>
+        </section>
+    </main>
+
+</body>
+</html>
