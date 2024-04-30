@@ -19,24 +19,22 @@
                     <input type="text" name="chave" placeholder="Chave" required>
                     <input type="text" name="utd-regiao" placeholder="UTD da Região" required>
                     <div class="selecione">
-                        <h5>Tipo do Trafo Retirado</h5>
-                        <input list="opcoes" id="escolha" name="Trafo Retirado">
-                            <datalist id="opcoes">
-                            <option value="Monofásico">
-                            <option value="Bifásico">
-                            <option value="Trifásico">
-                            </datalist>
+                        <label for="escolha" class="trafo">Tipo do Trafo Retirado</label>
+                            <select id="escolha" name="Trafo Retirado">
+                                <option value="Monofásico">Monofásico</option>
+                                <option value="Bifásico">Bifásico</option>
+                                <option value="Trifásico">Trifásico</option>
+                            </select>
                     </div>
                     <input type="number" name="potencia" placeholder="Potência em KVA" required>
                     <input type="name" name="tipo-do-oleo" placeholder="Tipo de Óleo" required>
                     <div class="selecione">
-                        <h5>Tipo do Trafo Instalado</h5>
-                        <input list="opcoes" id="escolha" name="Trafo Instalado">
-                            <datalist id="opcoes">
-                            <option value="Monofásico">
-                            <option value="Bifásico">
-                            <option value="Trifásico">
-                            </datalist>
+                        <label for="escolha" class="trafo">Tipo do Trafo Instalado</label>
+                            <select id="escolha" name="Trafo Instalado">
+                                <option value="Monofásico">Monofásico</option>
+                                <option value="Bifásico">Bifásico</option>
+                                <option value="Trifásico">Trifásico</option>
+                            </select>
                     </div>
                     <input type="text" name="tipo-do-oleo-inst" placeholder="Tipo do Óleo" required>
                     <input type="text" name="obs" placeholder="Observação">
@@ -45,6 +43,5 @@
                 </form>
         </section>
     </main>
-
 </body>
 </html>
