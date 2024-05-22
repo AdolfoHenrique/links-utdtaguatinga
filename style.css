@@ -7,6 +7,10 @@ body{
     background-color: #FDF9F3;
 }
 
+.fundo_plan{
+    background-color: #0B8C38;
+}
+
 .links{
     display: flex;
     align-items: center;
@@ -21,6 +25,10 @@ body{
 h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #0B8C38;
+}
+
+.h1_plan{
+    color: #FDF9F3;
 }
 
 h3{
