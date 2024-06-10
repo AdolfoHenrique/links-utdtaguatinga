@@ -12,7 +12,9 @@
         <section class="links">
             <img class="links-logo" src="assets/Logo Neoenergia.png" alt="">
             <h1>UTD - Taguatinga</h1>
-                <form class="links-formulario" action="https://script.google.com/macros/s/AKfycbz2SrMH-HSxEs6wy3KuCWU0FIBWmJ5SgJzB3KC08oFngm8jE9IrgvN564vOtMZtVEHFSA/exec" method="POST">
+                <img class= "patrimonioimg" src="assets/partimonio.jpeg" alt="Foto do patrimonio nos transformadores">
+                <figcaption class="indica">Onde encontrar o Numero de Patrimônio</figcaption>
+                <form class="links-formulario" action="https://script.google.com/macros/s/AKfycbz_5dhuHOps_8qC8Nbkd-5o36STmWj0zrnBqbqSEzrDmOSMs5cppzB1DoVdMyssleG3/exec" method="POST">
                     <h3>Substituição de Trafo</h3>
                     <input type="date" id="date" name="Data" placeholder="Data" required>
                     <input type="text" name="nome-eletricistas" placeholder="Nome dos Eletricistas" required>
@@ -28,7 +30,14 @@
                             </select>
                     </div>
                     <input type="number" name="potencia" placeholder="Potência em KVA" required>
-                    <input type="name" name="tipo-do-oleo" placeholder="Tipo de Óleo" required>
+                    <input type="number" name="patrimonio1" placeholder="N° Patrimônio Retirado" required>
+                    <div class="selecione">
+                        <label for="escolha" class="trafo" style="padding: 1px 48px">Tipo de Óleo</label>
+                            <select name="tipo-do-oleo" id="escolha">
+                                <option value="Mineiral">Mineiral</option>
+                                <option value="Vegetal">Vegetal</option>
+                            </select>
+                    </div>
                     <div class="selecione">
                         <label for="escolha" class="trafo">Tipo do Trafo Instalado</label>
                             <select id="escolha" name="Trafo Instalado">
@@ -38,7 +47,14 @@
                             </select>
                     </div>
                     <input type="number" name="potencia-inst" placeholder="Potência em KVA" required>
-                    <input type="text" name="tipo-do-oleo-inst" placeholder="Tipo do Óleo" required>
+                    <input type="number" name="patrimonio2" placeholder="N° Patrimônio Insalado" required>
+                    <div class="selecione">
+                        <label for="escolha" class="trafo" style="padding: 1px 48px">Tipo de Óleo</label>
+                            <select name="tipo-do-oleo-inst" id="escolha">
+                                <option value="Mineiral">Mineiral</option>
+                                <option value="Vegetal">Vegetal</option>
+                            </select>
+                    </div>
                     <input type="text" name="obs" placeholder="Observação">
                     <button type="submit">Enviar</button>
                     <input type="hidden" name="_next" value="https://links-utdtaguatinga.vercel.app/obg.html">
