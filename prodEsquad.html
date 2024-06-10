@@ -13,25 +13,27 @@
             <img class="links-logo" src="assets/Logo Neoenergia.png" alt="">
             <h1>Produção Esquadrão</h1>
 
-            <form class= "links-formulario" action="">
-            <h3>Corte</h3>
-            <input type="number" name="matricula-eletricista-1" placeholder="Matricula Eletricista 1" required>
-            <input type="number" name="matricula-eletricista-2" placeholder="Matricula Eletricista 2" required>
-            <input type="number" name="numero-viatura" placeholder="Numero da Viatura" required>
-            <input type="number" name="qt-oses" placeholder= "Qtd OSES Programadas" required>
-            <input type="number" name="CorteS" placeholder="Cortes" required>
-            <input type="number" name="oses-conta-paga" placeholder="Oses com Conta Paga">
-            <input type="number" name="sem-debito" placeholder="Sem Débitos">
-            <input type="number" name="impedimento" placeholder="Impedimento">
-            <input type="number" name="reguladas" placeholder="Reguladas">
-            <input type="number" name="nao-localizadas" placeholder="Nâo Localizadas">
-            <input type="number" name="ja-suspenso" placeholder="Já Suspenso">
-            <input type="number" name="recorte" placeholder="Recorte">
-            <input type="number" name="total" placeholder="Total Arrecadado">
-            <input type="date" id="date" name="Data" placeholder="Data" required>
-            <button type="submit">Enviar</button>
-            <input type="hidden" name="_next" value="https://links-utdtaguatinga.vercel.app/obg.html">
+            <form class="links-formulario" id="productionForm" action="https://script.google.com/macros/s/AKfycbxPkfHVwt6qWb4TfYJSDoxp8En93SIpxTBCBxqCIuzvvLOspmqH9sm2D4e81PiHao6cMg/exec" method="post">
+                <h3>Corte</h3>
+                <input type="number" name="matricula-eletricista-1" placeholder="Matricula Eletricista 1" required>
+                <input type="number" name="matricula-eletricista-2" placeholder="Matricula Eletricista 2" required>
+                <input type="number" name="numero-viatura" placeholder="Numero da Viatura" required>
+                <input type="number" name="qt-oses" placeholder="Qtd OSES Programadas" required>
+                <input type="number" name="Cortes" placeholder="Cortes" required>
+                <input type="number" name="oses-conta-paga" placeholder="Oses com Conta Paga">
+                <input type="number" name="sem-debito" placeholder="Sem Débitos">
+                <input type="number" name="impedimento" placeholder="Impedimento">
+                <input type="number" name="reguladas" placeholder="Reguladas">
+                <input type="number" name="nao-localizadas" placeholder="Nâo Localizadas">
+                <input type="number" name="ja-suspenso" placeholder="Já Suspenso">
+                <input type="number" name="recorte" placeholder="Recorte">
+                <input type="number" name="total" placeholder="Total Arrecadado">
+                <input type="date" id="date" name="Data" placeholder="Data" required>
+                <button type="submit">Enviar</button>
+                <input type="hidden" name="_next" value="https://links-utdtaguatinga.vercel.app/obg.html">
             </form>
-    
+        </section>
+    </main>
+
 </body>
 </html>
