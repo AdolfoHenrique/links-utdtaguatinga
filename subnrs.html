@@ -13,10 +13,11 @@
             <img class="links-logo" src="assets/Logo Neoenergia.png" alt="">
             <h1>UTD - Taguatinga</h1>
 
-                <form class="links-formulario" action="https://script.google.com/macros/s/AKfycbx9j2GUPjeSDwOVW3MDXVFLcyKr9LoqmZr-JuEb3EsHE1Yk5tIYiYJ4xU_GH45DhvG24A/exec" method="POST">
+                <form class="links-formulario" action="https://script.google.com/macros/s/AKfycbwPGedKoUDBF6IkOYnCWC0IByxcW6UBFgMmW5tK7QhVkr91qL5MzpTN7euGCltEh-VoPA/exec" method="POST">
                     <h3>Substituição por NRS</h3>
                     <input type="hidden" name="_subject" value="Subistituição de Medidor por NRS">
                     <input type="number" name="numero-da-nrs" placeholder="Numero da nrs" required>
+                    <Input type="number" name="numero-uc" placeholder="Numero da UC"></Input>
                     <input type="number" name="medidor-retirado" placeholder="Medidor Retirado" required>
                     <input type="number" name="leituraret" placeholder="Leitura" required>
                     <input type="number" name="medidor-instalado" placeholder="Medidor instalado" required>
@@ -25,7 +26,13 @@
                     <input type="name" name="chave-de-referencia" placeholder="Chave de Referência" required>
                     <input type="number" name="matricula-eletricista-1" placeholder="Matricula Eletricista 1" required>
                     <input type="number" name="matricula-eletricista-2" placeholder="Matricula Eletricista 2" required>
-                    <input type="text" name="defeito" placeholder="Defeito" >
+                    <div class="selecione-nrs">
+                        <label for="escolha-nrs" class="defeito">Defeito</label>
+                            <select id="escolha" name="defeito">
+                                <option value="Borne Carbonizado">Borne Carbonizado</option>
+                                <option value="Medidor Furtado">Medidor Furtado</option>
+                            </select>
+                    </div>
                     <input type="date" id="date" name="Data" placeholder="Data" required>
                     <button type="submit">Enviar</button>
                     <input type="hidden" name="_next" value="https://links-utdtaguatinga.vercel.app/obg.html">
