@@ -13,14 +13,30 @@
             <img class="links-logo" src="assets/Logo Neoenergia.png" alt="">
             <h1>UTD - Taguatinga</h1>
 
-                <form class="links-formulario" action="https://script.google.com/macros/s/AKfycbzqYFqbT-obs3c0Zk58oK1i8u27sql4KZiNDpTmyEwKRD5---HnEcbvuQnVUP8En-ay/exec" method="POST">
+                <form class="links-formulario" action="https://script.google.com/macros/s/AKfycbzLk0XpZieIPcB7kPz9mOTFsntkCwVvTHvkbU4GY6u5Dw6wbgpHdFImAv6T5YyfTvZA/exec" method="POST">
                     <h3>Substituição por OSE</h3>
                     <input type="hidden" name="_subject" value="Subistituição de Medidor por OSE">
                     <input type="text" name="numero-da-ose" placeholder="Numero da OSE" minlength="12" maxlength="12" pattern="\d{12}" required>
                     <input type="number" name="medidor-retirado" placeholder="Medidor Retirado" required>
                     <input type="number" name="leituraret" placeholder="Leitura" required>
+                    <div class="selecione">
+                        <label for="escolha" class="trafo">Tipo do Medidor Retirado</label>
+                            <select id="escolha" name="tipo-de-medidor-ret">
+                                <option value="Monofásico">Monofásico</option>
+                                <option value="Bifásico">Bifásico</option>
+                                <option value="Trifásico">Trifásico</option>
+                            </select>
+                    </div>
                     <input type="number" name="medidor-instalado" placeholder="Medidor instalado" required>
                     <input type="number" name="leiturainst" placeholder="Leitura" required>
+                    <div class="selecione">
+                        <label for="escolha" class="trafo">Tipo do Trafo Instalado</label>
+                            <select id="escolha" name="tipo-de-medidor-inst">
+                                <option value="Monofásico">Monofásico</option>
+                                <option value="Bifásico">Bifásico</option>
+                                <option value="Trifásico">Trifásico</option>
+                            </select>
+                    </div>
                     <input type="number" name="lacre-da-caixa" placeholder="Lacre da Caixa" required>
                     <input type="name" name="chave-de-referencia" placeholder="Chave de Referência" required>
                     <input type="number" name="matricula-eletricista-1" placeholder="Matricula Eletricista 1" required>
